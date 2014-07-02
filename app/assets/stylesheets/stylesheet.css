@@ -1,3 +1,21 @@
 html {
   font-family: 'Lato', sans-serif;
 }
+
+.chris {
+  font-weight: lighter;
+  display: inline-block;
+  margin-left: 25%;
+  width: 20%;
+}
+
+.chris-title {
+  display: inline-block;
+  margin-left: 10%;
+  width: 20%;
+}
+
+.blurb {
+  margin: 0 20% 5% 20%;
+  text-align: justify;
+}
