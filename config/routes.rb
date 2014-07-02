@@ -56,6 +56,7 @@ Rails.application.routes.draw do
 
   root :to => 'users#index'
 
+  resources :photos, only: [:index]
   resources :links, only: [:index]  
   resources :contacts, only: [:index]
 end

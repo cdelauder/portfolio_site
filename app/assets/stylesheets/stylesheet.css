@@ -2,20 +2,86 @@ html {
   font-family: 'Lato', sans-serif;
 }
 
+a {
+  color: #51088f;
+}
+
 .chris {
   font-weight: lighter;
   display: inline-block;
-  margin-left: 25%;
-  width: 20%;
+  margin-left: 20%;
+  width: 30%;
 }
 
 .chris-title {
   display: inline-block;
-  margin-left: 10%;
+  margin-left: 11%;
   width: 20%;
 }
 
 .blurb {
-  margin: 0 20% 5% 20%;
+  margin: 0 20% 3% 20%;
   text-align: justify;
+  font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.content-links {
+  margin-left: 20%;
+  border-bottom: 1px solid black;
+  margin-right: 20%;
+}
+
+.portfolio-link {
+  margin-left: 10%;
+}
+
+.contact-link {
+  margin-left: 10%;
+}
+
+.main-content {
+  margin: 0 20% 0 20%;
+}
+
+.project {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.project-pic {
+  max-width: 40%;
+}
+
+.project-title {
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.project-description {
+  font-weight: lighter;
+  font-size: .8em; 
+  text-align: justify;
+}
+
+.project-source {
+  font-size: .8em;
+  display: inline;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.contact-me-link {
+  font-weight: bolder;
+  display: block;
+  text-decoration: none;
+  margin-top: 1em;
+}
+
+.my-pic {
+  margin-top: 1em;
 }
