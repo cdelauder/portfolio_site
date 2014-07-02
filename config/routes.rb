@@ -53,4 +53,9 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  root :to => 'users#index'
+
+  resources :links, only: [:index]  
+  resources :contacts, only: [:index]
 end
