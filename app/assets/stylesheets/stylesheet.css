@@ -88,6 +88,8 @@ a {
   margin-top: 1em;
 }
 
-.my-pic {
-  margin-top: 1em;
+.chris-pic {
+  padding-top: 1em;
+  max-width: 100%;
+  display: inline-block;
 }
