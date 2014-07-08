@@ -1,11 +1,10 @@
 $(document).ready(bindListeners)
 
 function bindListeners () {
-  $('.content-links').off().on('click', getContent)
+  $('.content-links').one('click', getContent)
 }
 
 var getContent = function(e) {
-  console.log('get')
   e.preventDefault()
   var ajaxCall = $.ajax({
     url: e.target.href,
@@ -15,8 +14,11 @@ var getContent = function(e) {
 }
 
 var displayContent = function(e) {
-  console.log('display')
   $('.main-content').empty().append(e)
+}
+
+var toggleListeners = function () {
+  $('.content-links').one('click', getContent)
 }
 
 
