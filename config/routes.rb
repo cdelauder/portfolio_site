@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     collection do
       get :resume
       get :download
+      get :display
     end
   end
   resources :photos, only: [:index]

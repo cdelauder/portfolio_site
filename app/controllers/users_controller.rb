@@ -10,4 +10,11 @@ class UsersController < ApplicationController
               filename: "#chrisdelauder.pdf",
               type: "application/pdf")
   end
+
+  def display
+    send_file("#{Rails.root}/files/chrisdelauder.pdf",
+              filename: "#chrisdelauder.pdf",
+              disposition: 'inline',
+              type: "application/pdf")
+  end
 end
