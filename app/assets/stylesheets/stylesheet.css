@@ -85,9 +85,14 @@ a {
   text-decoration: none;
 }
 
+.fa {
+  display: inline-block;
+  margin-right: .5em;
+}
+
 .contact-me-link {
   font-weight: bolder;
-  display: block;
+  display: inline-block;
   text-decoration: none;
   margin-top: 1em;
 }
