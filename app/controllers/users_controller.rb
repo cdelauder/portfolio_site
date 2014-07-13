@@ -1,5 +1,13 @@
 class UsersController < ApplicationController
-  def index
-    
+  def index   
+  end
+
+  def resume
+  end
+
+  def download
+    send_file("#{Rails.root}/files/chrisdelauder.pdf",
+              filename: "#chrisdelauder.pdf",
+              type: "application/pdf")
   end
 end

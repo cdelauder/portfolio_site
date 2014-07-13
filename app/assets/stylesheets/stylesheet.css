@@ -48,6 +48,10 @@ a {
   margin-left: 10%;
 }
 
+.resume-link {
+  margin-left: 10%;
+}
+
 .main-content {
   margin: 0 20% 0 20%;
 }
@@ -90,6 +94,13 @@ a {
 
 .chris-pic {
   padding-top: 1em;
-  max-width: 100%;
+  max-width: 60%;
   display: inline-block;
+}
+
+.resume {
+  font-weight: bolder;
+  display: block;
+  text-decoration: none;
+  margin-top: 1em;
 }
