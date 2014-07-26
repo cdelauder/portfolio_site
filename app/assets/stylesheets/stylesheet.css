@@ -92,9 +92,9 @@ a {
 
 .contact-me-link {
   font-weight: bolder;
-  display: inline-block;
   text-decoration: none;
   margin-top: 1em;
+  display: inline-block;
 }
 
 .chris-pic {
@@ -118,4 +118,11 @@ a {
 
 .inline-bird {
   margin-right: 0;
+}
+
+.nibbler-pic {
+  padding-top: 1em;
+  margin-top: -21%;
+  max-width: 60%;
+  float: right;
 }
