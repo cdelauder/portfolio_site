@@ -17,4 +17,13 @@ class UsersController < ApplicationController
               disposition: 'inline',
               type: "application/pdf")
   end
+
+  def home
+  end
+
+  def portfolio
+  end
+
+  def contact
+  end
 end

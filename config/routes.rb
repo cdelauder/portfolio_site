@@ -7,9 +7,10 @@ Rails.application.routes.draw do
       get :resume
       get :download
       get :display
+      get :home
+      get :portfolio
+      get :contact
     end
   end
-  resources :photos, only: [:index]
-  resources :links, only: [:index]  
-  resources :contacts, only: [:index]
+
 end
