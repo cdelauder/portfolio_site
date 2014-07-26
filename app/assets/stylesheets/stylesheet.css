@@ -115,3 +115,7 @@ a {
   height: 800px;
   border: none;
 }
+
+.inline-bird {
+  margin-right: 0;
+}
