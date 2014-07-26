@@ -4,10 +4,10 @@
   <p class="blurb">My dream is to live in a world where everything is a single-page app. I promote this vision by building apps in Rails and Sinatra using Ruby and Javascript. I am currently learning Node as a way of trying to satisfy my hunger for more Javascript. In my spare time you will find me curling or hiking with my beagle Nibbler.</p>
 </div>
 <div class="content-links">
-  <a href="/users/home" class="home-link">Home</a>
-  <a href="/users/portfolio" class="portfolio-link">Portfolio</a>
-  <a href="/users/contact" class="contact-link">Contact Me</a>
-  <a href="users/resume" class="resume-link">Resume</a>
+  <%= link_to 'Home', home_users_path, remote: true %>
+  <%= link_to 'Portfolio', portfolio_users_path, remote: true, class: 'portfolio-link' %>
+  <%= link_to  'Contact Me', contact_users_path, remote: true, class: 'contact-link' %>
+  <%= link_to  'Resume', resume_users_path, remote: true, class: 'resume-link' %>
 </div>
 <div class="main-content">  
   <span class="chris-pic"><%= image_tag "chris.png", :width => "100%" %></span> 

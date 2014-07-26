@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   end
 
   def resume
+    render :layout => false
   end
 
   def download
@@ -19,11 +20,14 @@ class UsersController < ApplicationController
   end
 
   def home
+    render :layout => false
   end
 
   def portfolio
+    render :layout => false
   end
 
   def contact
+    render :layout => false
   end
 end

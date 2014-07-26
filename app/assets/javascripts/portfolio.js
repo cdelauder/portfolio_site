@@ -1,24 +1,13 @@
 $(document).ready(bindListeners)
 
 function bindListeners () {
-  $('.content-links').one('click', getContent)
+  $('.content-links').one('ajax:success', displayContent)
 }
 
-var getContent = function(e) {
-  e.preventDefault()
-  var ajaxCall = $.ajax({
-    url: e.target.href,
-    type: 'GET'
-  })
-  ajaxCall.done(displayContent)
+var displayContent = function(e, data, status, xhr) {
+  $('.main-content').empty().append(xhr.responseText)
+  bindListeners()
 }
 
-var displayContent = function(e) {
-  $('.main-content').empty().append(e)
-}
-
-var toggleListeners = function () {
-  $('.content-links').one('click', getContent)
-}
 
 
