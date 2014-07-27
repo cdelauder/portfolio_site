@@ -30,4 +30,17 @@ class UsersController < ApplicationController
   def contact
     render :layout => false
   end
+
+  def email
+    @email = {}
+    render :layout => false
+  end
+
+  def send_mail
+    email = params[:email]
+    subject = params[:subject]
+    body = params[:body]
+    UserMailer.contact_me(email, subject, body).deliver
+    redirect_to contact_users_path 
+  end
 end

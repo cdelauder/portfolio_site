@@ -98,6 +98,13 @@ a {
   display: inline-block;
 }
 
+.email-link {
+  font-weight: bolder;
+  text-decoration: none;
+  margin-top: 1em;
+  display: inline-block;
+}
+
 .chris-pic {
   padding-top: 1em;
   max-width: 60%;
@@ -127,3 +134,18 @@ a {
   max-width: 60%;
   float: right;
 }
+
+.email-form {
+  width: 40%;
+  display: block;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  position: absolute;
+  margin-left: -10%;
+  font-weight: lighter;   
+}
+
+.email-form #body {
+  float: right;
+}
+

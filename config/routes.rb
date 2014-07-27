@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   root :to => 'users#index'
+  post '/send_mail' => 'users#send_mail'
 
   resources :users, only: [:index] do
     collection do
@@ -10,6 +11,7 @@ Rails.application.routes.draw do
       get :home
       get :portfolio
       get :contact
+      get :email
     end
   end
 
