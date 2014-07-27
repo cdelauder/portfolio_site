@@ -1,10 +1,10 @@
 <div class='email-form'>
 <%= form_tag send_mail_path, class: 'email', remote: true do %>
-  <%= label_tag :email, 'email', size: '60' %>
-  <%= text_field_tag :email %>
+  <%= label_tag :email, 'email'%>&nbsp&nbsp&nbsp&nbsp
+  <%= text_field_tag :email, nil, size: 60  %>
   <br>
-  <%= label_tag :subject, 'subject', size: '60' %>
-  <%= text_field_tag :subject %>
+  <%= label_tag :subject, 'subject' %>
+  <%= text_field_tag :subject, nil, size: 60  %>
   <br>
   <%= label_tag :body, 'body' %>
   <%= text_area_tag :body, nil, size: "60x20" %>

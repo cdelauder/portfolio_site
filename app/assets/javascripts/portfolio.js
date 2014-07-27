@@ -29,7 +29,6 @@ var emailSent = function() {
 
 var emailError = function() {
   $('.email-form').remove()
-  bindListeners()
 }
 
 
