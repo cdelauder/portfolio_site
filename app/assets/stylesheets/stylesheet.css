@@ -3,8 +3,15 @@ html {
   background-color: #EDDAB9;
 }
 
+.page {
+  margin: -1% -1% -2% -1%;
+  height: 100%;
+}
+
 a {
   color: #51088f;
+  text-decoration: none;
+  font-weight: lighter;
 }
 
 .chris {
@@ -27,11 +34,6 @@ a {
 .blurb {
   /*margin: 0 0% 3% 20%;*/
   text-align: justify;
-  font-weight: lighter;
-}
-
-a {
-  text-decoration: none;
   font-weight: lighter;
 }
 
@@ -151,3 +153,13 @@ a {
   border: 1px inset;
 }
 
+.shadow {
+  background-color: black;
+  opacity: .8;
+  z-index: 500;
+  position: absolute;
+  top:0; 
+  right:0;
+  bottom:0; 
+  left:0;
+}

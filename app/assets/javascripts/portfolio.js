@@ -11,6 +11,7 @@ var displayContent = function(e, data, status, xhr) {
 }
 
 var overlayContent = function(e, data, status, xhr) {
+  $('.page').append('<div class="shadow"></div>')
   $('.main-content').prepend(xhr.responseText)
   $('.email').one('ajax:error ajax:success', emailSend)
 }
@@ -24,6 +25,7 @@ var emailSend = function(e) {
 }
 
 var emailSent = function() {
+  $('.shadow').remove()
   $('.email-form').remove()
 }
 
