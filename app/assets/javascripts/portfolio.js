@@ -13,7 +13,7 @@ var displayContent = function(e, data, status, xhr) {
 var overlayContent = function(e, data, status, xhr) {
   $('.page').append('<div class="shadow"></div>')
   $('.main-content').prepend(xhr.responseText)
-  $('.email-textfield').one('ajax:error ajax:success', emailSend)
+  $('.email-textfield').one('ajax:error ajax:send ajax:success', emailSend)
   $('.close').one('ajax:error ajax:success', cancel)
 
 
@@ -22,6 +22,8 @@ var overlayContent = function(e, data, status, xhr) {
 var emailSend = function(e) {
   if (e.type === 'ajax:success') {
     emailSent()
+  } else if (e.type === 'ajax:send') {
+    $('.email-textfield').append('Sending...')
   } else {
     emailError()
   }
@@ -29,10 +31,12 @@ var emailSend = function(e) {
 
 var emailSent = function() {
   toggleEmailForm()
+  $('.email-status').text('Email sent')
 }
 
 var emailError = function() {
   toggleEmailForm()
+  $('.email-status').text('Error, please try again')
 }
 
 var cancel = function() {
