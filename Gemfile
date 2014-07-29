@@ -39,5 +39,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # gem 'debugger', group: [:development, :test]
 
 gem 'rails_12factor', group: :production
+gem 'dotenv-rails', :groups => [:development, :test]
 
 ruby '2.1.1'
