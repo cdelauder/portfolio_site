@@ -181,7 +181,7 @@ a {
 }
 
 .close {
-  font-weight: bold;
+  font-weight: lighter;
   float: right;
   display: inline;
   padding: 1%;

@@ -1,5 +1,5 @@
 <div class='email-form'>
-<button><%= link_to 'X', contact_users_path, class: 'close', remote:true %></button>
+<%= link_to 'Close', contact_users_path, class: 'close', remote:true %>
 <%= form_tag send_mail_path, class: 'email-textfield', remote: true do %>
   <%= label_tag :email, 'email'%>&nbsp&nbsp&nbsp&nbsp
   <%= text_field_tag :email, nil, size: 40, class: 'email-field'  %> 
