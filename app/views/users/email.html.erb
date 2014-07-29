@@ -1,14 +1,15 @@
 <div class='email-form'>
 <%= form_tag send_mail_path, class: 'email', remote: true do %>
   <%= label_tag :email, 'email'%>&nbsp&nbsp&nbsp&nbsp
-  <%= text_field_tag :email, nil, size: 60  %>
+  <%= text_field_tag :email, nil, size: 40  %> 
+  <%= link_to 'X', contact_users_path, class: 'close', remote:true %>
   <br>
   <%= label_tag :subject, 'subject' %>
-  <%= text_field_tag :subject, nil, size: 60  %>
+  <%= text_field_tag :subject, nil, size: 40  %>
   <br>
   <%= label_tag :body, 'body' %>
-  <%= text_area_tag :body, nil, size: "60x20" %>
+  <%= text_area_tag :body, nil, size: "40x20" %>
   <br>
-  <%= submit_tag :submit %>
+  <%= submit_tag :submit, id: 'submit' %>
 <% end %>
 </div>
