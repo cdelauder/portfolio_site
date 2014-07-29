@@ -151,6 +151,7 @@ a {
   position: absolute;
   font-weight: lighter;  
   padding: 1%; 
+  border-radius: 5%;
 }
 
 .email-form #body {
