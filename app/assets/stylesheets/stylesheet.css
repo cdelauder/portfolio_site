@@ -1,9 +1,17 @@
 html {
   font-family: 'Lato', sans-serif;
+  background-color: #EDDAB9;
+}
+
+.page {
+  margin: -1% -1% -2% -1%;
+  height: 100%;
 }
 
 a {
   color: #51088f;
+  text-decoration: none;
+  font-weight: lighter;
 }
 
 .chris {
@@ -24,13 +32,8 @@ a {
 }
 
 .blurb {
-  margin: 0 20% 3% 20%;
+  /*margin: 0 0% 3% 20%;*/
   text-align: justify;
-  font-weight: lighter;
-}
-
-a {
-  text-decoration: none;
   font-weight: lighter;
 }
 
@@ -92,9 +95,28 @@ a {
 
 .contact-me-link {
   font-weight: bolder;
-  display: inline-block;
   text-decoration: none;
   margin-top: 1em;
+  display: inline;
+  font-size: 1em;
+}
+
+.nibbler-pic {
+  padding-top: 1em;
+  max-width: 50%;
+  float: right;
+}
+
+.email-link {
+  font-weight: bolder;
+  text-decoration: none;
+  display: inline;
+}
+
+.links {
+  padding-top: 1em;
+  width: 50%;
+  float:left;
 }
 
 .chris-pic {
@@ -114,4 +136,53 @@ a {
   width: 100%;
   height: 800px;
   border: none;
+}
+
+.inline-bird {
+  margin-right: 0;
+}
+
+.email-form {
+  margin-top: 1em;
+  width: 330px;
+  display: inline;
+  z-index: 1000;
+  background-color: #EDDAB9;
+  position: absolute;
+  font-weight: lighter;  
+  padding: 1%; 
+}
+
+.email-form #body {
+  font-weight: lighter;
+  float: right;
+  border: 1px inset;
+}
+
+.email-textfield {
+  display: inline;
+}
+
+.email-form #submit {
+  margin-top: 1em;
+  float: right;
+  display: inline;
+}
+
+.shadow {
+  background-color: black;
+  opacity: .8;
+  z-index: 500;
+  position: absolute;
+  top:0; 
+  right:0;
+  bottom:0; 
+  left:0;
+}
+
+.close {
+  font-weight: lighter;
+  float: right;
+  display: inline;
+  padding: 1%;
 }
