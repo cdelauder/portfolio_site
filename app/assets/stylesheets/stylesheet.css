@@ -195,6 +195,7 @@ a {
   bottom: 0;
   height: 5%;
   text-align: center;
+  display: block;
 }
 
 .footer-link {

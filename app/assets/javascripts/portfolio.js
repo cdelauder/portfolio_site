@@ -6,6 +6,7 @@ function bindListeners () {
 }
 
 var displayContent = function(e, data, status, xhr) {
+  displayFooter(e)
   $('.main-content').empty().append(xhr.responseText)
   bindListeners()
 }
@@ -15,8 +16,6 @@ var overlayContent = function(e, data, status, xhr) {
   $('.main-content').prepend(xhr.responseText)
   $('.email-textfield').one('ajax:error ajax:send ajax:success', emailSend)
   $('.close').one('ajax:error ajax:success', cancel)
-
-
 }
 
 var emailSend = function(e) {
@@ -48,6 +47,16 @@ var toggleEmailForm = function() {
   $('.email-form').remove()
   $('.email').one('ajax:error ajax:success', emailSend)
   $('.email-link').one('ajax:success', overlayContent)
+}
+
+var displayFooter = function(e) {
+  if (e.target.className === "contact-link") {
+    $('.footer').css('display', 'none') 
+    console.log('hide')
+  } else {
+    $('.footer').css('display', 'block') 
+    console.log('hide')
+  }
 }
 
 
