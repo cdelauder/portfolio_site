@@ -32,7 +32,6 @@ a {
 }
 
 .blurb {
-  /*margin: 0 0% 3% 20%;*/
   text-align: justify;
   font-weight: lighter;
 }
@@ -187,3 +186,4 @@ a {
   display: inline;
   padding: 1%;
 }
+
