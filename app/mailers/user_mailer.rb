@@ -3,7 +3,7 @@ class UserMailer < ActionMailer::Base
 
   def contact_me(email, subject, body)
     @body = body
-    mail(from: email, subject: subject)
+    mail(reply_to: email, subject: subject)
   end
 
 end
