@@ -6,7 +6,6 @@ function bindListeners () {
 }
 
 var displayContent = function(e, data, status, xhr) {
-  displayFooter(e)
   $('.main-content').empty().append(xhr.responseText)
   bindListeners()
 }
@@ -49,14 +48,5 @@ var toggleEmailForm = function() {
   $('.email-link').one('ajax:success', overlayContent)
 }
 
-var displayFooter = function(e) {
-  if (e.target.className === "contact-link") {
-    $('.footer').css('display', 'none') 
-    console.log('hide')
-  } else {
-    $('.footer').css('display', 'block') 
-    console.log('hide')
-  }
-}
 
 
