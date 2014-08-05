@@ -15,8 +15,6 @@ var overlayContent = function(e, data, status, xhr) {
   $('.main-content').prepend(xhr.responseText)
   $('.email-textfield').one('ajax:error ajax:send ajax:success', emailSend)
   $('.close').one('ajax:error ajax:success', cancel)
-
-
 }
 
 var emailSend = function(e) {
@@ -49,5 +47,6 @@ var toggleEmailForm = function() {
   $('.email').one('ajax:error ajax:success', emailSend)
   $('.email-link').one('ajax:success', overlayContent)
 }
+
 
 
