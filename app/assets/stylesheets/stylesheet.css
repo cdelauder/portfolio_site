@@ -87,6 +87,12 @@ a {
   text-align: justify;
 }
 
+.project-bullets {
+  font-weight: lighter;
+  font-size: .8em; 
+  text-align: justify;
+}
+
 .project-source {
   font-size: .8em;
   display: inline;
