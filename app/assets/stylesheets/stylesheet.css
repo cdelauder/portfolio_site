@@ -71,12 +71,14 @@ a {
 }
 
 .project-pic {
-  max-width: 100%;
+  max-width: 45%;
   height: auto;
+  float: right;
   display: inline-block;
+  margin-left: 5%;
 }
 
-.project-title {
+.project-name {
   font-weight: lighter;
   text-decoration: none;
 }
