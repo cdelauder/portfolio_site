@@ -4,6 +4,11 @@ html {
   min-height: 100%;
 }
 
+body {
+  min-height: 100%;
+  bottom: 0;
+}
+
 .page {
   margin: -1% -1% -2% -1%;
   height: 100%;
@@ -84,6 +89,7 @@ a {
 }
 
 .project-description {
+  width: 50%;
   font-weight: lighter;
   font-size: .8em; 
   text-align: justify;
@@ -205,6 +211,7 @@ a {
 
 .footer {
   margin-top: 1em;
+  padding-top: 1em;
   bottom: 0;
   height: 5%;
   text-align: center;
