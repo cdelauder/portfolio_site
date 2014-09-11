@@ -1,6 +1,7 @@
 html {
   font-family: 'Lato', sans-serif;
-  background-color: #EDDAB9;
+  /*background-color: #EDDAB9;*/
+  background-color: #7CBBCA;
   min-height: 100%;
 }
 
@@ -13,12 +14,14 @@ body {
 
 .page {
   margin: -1% -1% -2% -1%;
-  height: 100%;
+  min-height: 100%;
   position: relative;
+  clear: both;
 }
 
 a {
-  color: #51088f;
+  /*color: #51088f;*/
+  color: #700289;
   text-decoration: none;
   font-weight: lighter;
 }
