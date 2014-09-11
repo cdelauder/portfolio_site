@@ -11,7 +11,7 @@ var displayContent = function(e, data, status, xhr) {
 }
 
 var overlayContent = function(e, data, status, xhr) {
-  $('.page').append('<div class="shadow"></div>')
+  $('html').append('<div class="shadow"></div>')
   $('.main-content').prepend(xhr.responseText)
   $('.email-textfield').one('ajax:error ajax:send ajax:success', emailSend)
   $('.close').one('ajax:error ajax:success', cancel)
